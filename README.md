@@ -7,12 +7,9 @@ docker-compose up
 # 2. build grpc client docker image
 make client-build
 
-# 3. send client message to grpc servers
+# 3. send client message to grpc servers 10th times
 make client-send  
-make client-send
-make client-send
-make client-send
-...
+
 ```
 
 ## Links

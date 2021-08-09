@@ -23,7 +23,7 @@ func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloRe
 	if err != nil {
 		panic(err)
 	}
-	return &pb.HelloReply{Message: "Hello " + in.GetName() + " " + hostName}, nil
+	return &pb.HelloReply{Message: "Hello " + hostName}, nil
 }
 
 func main() {
